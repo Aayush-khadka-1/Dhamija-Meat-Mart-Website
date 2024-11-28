@@ -8,37 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Dhamija Meat Mart Farm</title>
+    <!-- Favicon (Logo for browser tab) -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <title></title> 
 </head>
+
 <body>
   
-    <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Dhamija Meat Mart Pvt Ltd</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Dhamija Meat Mart" width="80" height="80"> <!-- Adjust width as necessary -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./shop.html">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./supply.html">Suppliers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact Us</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./supply.html">Suppliers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
             </ul>
             <form class="d-flex">
                 <button type="button" class="btn btn-primary open-modal-btn" id="openLoginModal">Login</button>
             </form>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
+
 
 
    <!-- Main section -->
@@ -47,7 +54,7 @@
     <div class="container py-5">
         <div class="row py-1 ">
             <div class="col-lg-12 pt-5  ">
-                <h1 class="pt-5">Farm Fresh Goat, Beef and Chicken</h1>
+                <h1 class="pt-5">ताजा कुखुरा, सधैं उत्कृष्ट गुणस्तर!</h1>
                 <button class="btn1 mt-5 mx-auto d-block">Enter the Shop</button>
             </div>
         </div>
@@ -85,7 +92,6 @@
 
 
    <!-- Products  -->
-
    <section class="product">
     <div class="container py-5">
         <div class="row py-5">
@@ -95,57 +101,53 @@
         </div>
         <div class="row">
             <div class="col-lg-3 text-center">
-               <div class="card border-0 bg-light mb-2">
-                <div class="card-body">
-                    <img src="./images/chicken.jpg" class="img-fluid" alt="">
+                <div class="card border-0 bg-light mb-2" style="height: 400px;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <img src="./images/chicken.png" class="img-fluid" alt="" style="height: 150px; object-fit: contain;">
+                        <h5 class="mt-3">Whole Chicken</h5>
+                        <p style="font-size: 18px;">रु. ३०० प्रति किलो</p>
+                    </div>
                 </div>
-                <h6>Chicken</h6>
-                <p>Ksh.600</p>
-               </div>
             </div>
 
             <div class="col-lg-3 text-center">
-                <div class="card border-0 bg-light mb-2">
-                 <div class="card-body">
-                     <img src="./images/pork.jpg" class="img-fluid" alt="">
-                 </div>
-                 <h6>Chicken</h6>
-                 <p>Ksh.600</p>
+                <div class="card border-0 bg-light mb-2" style="height: 400px;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <img src="./images/breast.png" class="img-fluid" alt="" style="height: 150px; object-fit: cover;">
+                        <h5 class="mt-3">Chicken Breast</h5>
+                        <p style="font-size: 18px;">रु. ६०० प्रति किलो</p>
+                    </div>
                 </div>
-             </div>
+            </div>
 
-             <div class="col-lg-3 text-center">
-                <div class="card border-0 bg-light mb-2">
-                 <div class="card-body">
-                     <img src="./images/nyama.jpg" class="img-fluid" alt="">
-                 </div>
-                 <h6>Chicken</h6>
-                 <p>Ksh.600</p>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light mb-2" style="height: 400px;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <img src="./images/leg.png" class="img-fluid" alt="" style="height: 150px; object-fit: cover;">
+                        <h5 class="mt-3">Chicken Leg</h5>
+                        <p style="font-size: 18px;">रु. ३०० प्रति किलो</p>
+                    </div>
                 </div>
-             </div>
+            </div>
 
-             <div class="col-lg-3 text-center">
-                <div class="card border-0 bg-light mb-2">
-                 <div class="card-body">
-                     <img src="./images/meat.jpg" class="img-fluid" alt="">
-                 </div>
-                 <h6>Chicken</h6>
-                 <p>Ksh.600</p>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light mb-2" style="height: 400px;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <img src="./images/wings.png" class="img-fluid" alt="" style="height: 150px; object-fit: cover;">
+                        <h5 class="mt-3">Chicken Wings</h5>
+                        <p style="font-size: 18px;">रु. ३०० प्रति किलो</p>
+                    </div>
                 </div>
-             </div>
+            </div>
+        </div>
 
-             <div class="row">
+        <div class="row">
             <div class="col-lg-12 text-center mt-5 m-auto">
                 <button class="btn1 mt-5 mx-auto d-block">Shop More</button>
             </div>
-             </div>
         </div>
-
-        
     </div>
-   </section>
-    
-
+</section>
    <!-- About Section -->
     <section class="about">
         <div class="container py-5">
@@ -157,8 +159,12 @@
 
             <div class="row">
                 <div class="col-lg-12 m-auto text-center">
-                    <p class="fs-3">At Lontana Farm, we’re passionate about supplying the finest meat from prime livestock raised on the lush grasslands of the Laikipia Plateau. Our mission is simple: to provide sustainably sourced, healthy, and delicious meat while supporting the local pastoral and ranching communities.
-                        Our animals are free-range, naturally-fed, and dry-aged to ensure superior taste and quality. By working directly with trusted farmers, we ensure traditional farming practices are upheld, ensuring happy, healthy animals and exceptional meat for our customers.
+                    <p class="fs-3">
+                      हामी उच्च गुणवत्ता परीक्षण गरिएका चिकन प्रदान गर्छौं। हाम्रो आफ्नै फार्म छ जहाँबाट अत्यन्त ताजा चिकन ल्याइन्छ र उच्च प्रशिक्षित कर्मचारीद्वारा ती चिकन ग्राहकहरूलाई बेच्छौं। हामीसँग उच्च प्रविधिका मेशिनरीहरू छन् जसले जीवित चिकनलाई तयार खाने मांसमा रूपान्तरण गर्छ।
+
+                      हाम्रो मिशन सरल छ: उच्च गुणस्तरीय, स्वस्थ र स्वादिष्ट मांस आपूर्ति गर्नु र स्थानीय पशुपालन समुदायलाई समर्थन गर्नु। हाम्रो जनावरहरू खुला घाँस मैदानमा पालेका, प्राकृतिक खाना खुवाइने र सुखा उमेर बढाइएका छन् जसले उत्कृष्ट स्वाद र गुणस्तर सुनिश्चित गर्छ। विश्वासपात्र किसानहरूसँग सीधा काम गरेर, हामी परम्परागत कृषिको अभ्यासलाई कायम राख्छौं, जसले खुशी र स्वस्थ जनावरहरूको सुनिश्चितता र हाम्रो ग्राहकहरूका लागि अद्वितीय मांस उत्पादन गर्छ।
+                      
+                      हामी यस क्षेत्रमा ५+ वर्षको अनुभवसँग उच्च सीप प्राप्त कर्मचारीहरूको टोलीसँग काम गर्दैछौं, जसले हाम्रो उत्पादन र सेवामा उत्कृष्टता सुनिश्चित गर्दछ।
                         </p>
                 </div>
             </div>
