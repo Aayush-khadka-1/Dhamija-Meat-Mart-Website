@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Lontana Farm</title>
 </head>
 <body>
   
     <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Lontana Farm</a>
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Dhamija Meat Mart" width="80" height="80"> <!-- Adjust width as necessary -->
+        </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,7 +48,7 @@
     <div class="container py-5">
         <div class="row py-4">
             <div class="col-lg-7 pt-3 text-center">
-                <h1 class="pt-5">Get in touch with us</h1>
+                <h1 class="pt-5">हामीसँग सम्पर्क गर्नुहोस्</h1>
             </div>
         </div>
     </div>
@@ -66,9 +67,12 @@
       <div class="form-group">
         <label for="role">Select Your Role</label>
         <select class="form-control" id="role" name="role" required>
-          <option value="farmer">Farmer</option>
-          <option value="butcher">Butcher</option>
-          <option value="producer">Producer</option>
+          <option value="farmer">किसान</option>
+          <option value="butcher">मासु पसल</option>
+          <option value="producer">रेस्टुरेन्ट</option>
+          <option value="producer">पार्टी प्यालेस</option>
+          <option value="producer">होटल र लजहरू</option>
+          <option value="producer">स्कूल</option>
         </select>
       </div>
 
@@ -92,19 +96,34 @@
 
       <!-- Checkbox for product options -->
       <div class="form-group">
-        <label>Select Products</label><br>
-        <input type="checkbox" id="goat" name="products" value="goat_meat">
-        <label for="goat">Goat Meat</label><br>
-
-        <input type="checkbox" id="sheep" name="products" value="sheep_meat">
-        <label for="sheep">Sheep Meat</label><br>
-
-        <input type="checkbox" id="beef" name="products" value="cattle_beef">
-        <label for="beef">Cattle Beef</label><br>
-
-        <input type="checkbox" id="chicken" name="products" value="chicken">
-        <label for="chicken">Chicken</label><br>
-      </div>
+        <label>Select Chicken Products</label><br>
+    
+        <!-- Chicken Products -->
+        <input type="checkbox" id="whole_chicken" name="products" value="whole_chicken">
+        <label for="whole_chicken">Whole Chicken</label><br>
+    
+        <input type="checkbox" id="curry_chicken_piece" name="products" value="curry_chicken_piece">
+        <label for="curry_chicken_piece">Curry Chicken Piece</label><br>
+    
+        <input type="checkbox" id="chicken_breast" name="products" value="chicken_breast">
+        <label for="chicken_breast">Chicken Breast</label><br>
+    
+        <input type="checkbox" id="chicken_wings" name="products" value="chicken_wings">
+        <label for="chicken_wings">Chicken Wings</label><br>
+    
+        <input type="checkbox" id="chicken_leg" name="products" value="chicken_leg">
+        <label for="chicken_leg">Chicken Leg</label><br>
+    
+        <input type="checkbox" id="chicken_thigh" name="products" value="chicken_thigh">
+        <label for="chicken_thigh">Chicken Thigh</label><br>
+    
+        <input type="checkbox" id="chicken_heart" name="products" value="chicken_heart">
+        <label for="chicken_heart">Chicken Heart</label><br>
+    
+        <input type="checkbox" id="chicken_liver" name="products" value="chicken_liver">
+        <label for="chicken_liver">Chicken Liver</label><br>
+    </div>
+    
 
       <!-- Address field -->
       <div class="form-group">

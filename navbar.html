@@ -1,0 +1,70 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Dhamija Meat Mart" width="100" height="100"> <!-- Adjust width and height as necessary -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./supply.html">Suppliers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button type="button" class="btn btn-primary open-modal-btn" id="openLoginModal">Login</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<style>
+    #navbar {
+        background-color: #f8f9fa; /* Initial light gray background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+
+    .navbar-nav .nav-link {
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #007bff; /* Blue color on hover */
+        text-decoration: underline;
+    }
+
+    .navbar-toggler {
+        border-color: #007bff;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #007bff; /* Blue icon */
+    }
+
+    .open-modal-btn {
+        border-radius: 30px; /* Rounded button */
+        padding: 8px 20px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .open-modal-btn:hover {
+        background-color: #0056b3; /* Darker blue */
+        border-color: #0056b3;
+    }
+</style>

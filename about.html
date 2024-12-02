@@ -6,37 +6,96 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Lontana Farm</title>
+
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Lontana Farm</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Dhamija Meat Mart" width="100" height="100"> <!-- Adjust width and height as necessary -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./shop.html">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Suppliers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact Us</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Suppliers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
             </ul>
             <form class="d-flex">
                 <button type="button" class="btn btn-primary open-modal-btn" id="openLoginModal">Login</button>
             </form>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
+
+<style>
+    #navbar {
+        background-color: #f8f9fa; /* Initial light gray background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
+
+    .navbar-nav .nav-link {
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #007bff; /* Blue color on hover */
+        text-decoration: underline;
+    }
+
+    .navbar-toggler {
+        border-color: #007bff;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #007bff; /* Blue icon */
+    }
+
+    .open-modal-btn {
+        border-radius: 30px; /* Rounded button */
+        padding: 8px 20px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .open-modal-btn:hover {
+        background-color: #0056b3; /* Darker blue */
+        border-color: #0056b3;
+    }
+</style>
+
+<script>
+    // JavaScript to change the navbar background color on page load
+    window.addEventListener('load', function() {
+        const currentPage = window.location.pathname;
+        const navbar = document.getElementById('navbar');
+
+        // Change background color based on page
+        if (currentPage.includes('index.html')) {
+            navbar.style.backgroundColor = '#f8f9fa'; // Light gray for homepage
+        } else {
+            navbar.style.backgroundColor = '#007bff'; // Blue for other pages
+        }
+    });
+</script>
+
+
 
       <!-- Hero Section -->
 
@@ -44,7 +103,7 @@
         <div class="container py-5">
             <div class="row py-4">
                 <div class="col-lg-7 pt-5 text-center">
-                    <h1 class="pt-5 text-center">About Us</h1>
+                    <h1 class="pt-5 text-center">हाम्रो बारेमा</h1>
                     
                 </div>
             </div>
@@ -58,8 +117,11 @@
 
         <div class="row">
             <div class="col-lg-12 mx-auto">
-                <p class="custom-font-size">At Lontana Farm, we’re passionate about supplying the finest meat from prime livestock raised on the lush grasslands of the Laikipia Plateau. Our mission is simple: to provide sustainably sourced, healthy, and delicious meat while supporting the local pastoral and ranching communities.
-                    Our animals are free-range, naturally-fed, and dry-aged to ensure superior taste and quality. By working directly with trusted farmers, we ensure traditional farming practices are upheld, ensuring happy, healthy animals and exceptional meat for our customers.
+                <p class="custom-font-size">  हामी उच्च गुणवत्ता परीक्षण गरिएका चिकन प्रदान गर्छौं। हाम्रो आफ्नै फार्म छ जहाँबाट अत्यन्त ताजा चिकन ल्याइन्छ र उच्च प्रशिक्षित कर्मचारीद्वारा ती चिकन ग्राहकहरूलाई बेच्छौं। हामीसँग उच्च प्रविधिका मेशिनरीहरू छन् जसले जीवित चिकनलाई तयार खाने मांसमा रूपान्तरण गर्छ।
+
+                  हाम्रो मिशन सरल छ: उच्च गुणस्तरीय, स्वस्थ र स्वादिष्ट मांस आपूर्ति गर्नु र स्थानीय पशुपालन समुदायलाई समर्थन गर्नु। हाम्रो जनावरहरू खुला घाँस मैदानमा पालेका, प्राकृतिक खाना खुवाइने र सुखा उमेर बढाइएका छन् जसले उत्कृष्ट स्वाद र गुणस्तर सुनिश्चित गर्छ। विश्वासपात्र किसानहरूसँग सीधा काम गरेर, हामी परम्परागत कृषिको अभ्यासलाई कायम राख्छौं, जसले खुशी र स्वस्थ जनावरहरूको सुनिश्चितता र हाम्रो ग्राहकहरूका लागि अद्वितीय मांस उत्पादन गर्छ।
+                  
+                  हामी यस क्षेत्रमा ५+ वर्षको अनुभवसँग उच्च सीप प्राप्त कर्मचारीहरूको टोलीसँग काम गर्दैछौं, जसले हाम्रो उत्पादन र सेवामा उत्कृष्टता सुनिश्चित गर्दछ।
                     </p>
             </div>
         </div>
